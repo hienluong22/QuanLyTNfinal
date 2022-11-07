@@ -52,10 +52,10 @@ namespace QLTN
             this.SoCau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoCK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnLastCH = new System.Windows.Forms.Button();
-            this.btnNextCH = new System.Windows.Forms.Button();
-            this.btnPreCH = new System.Windows.Forms.Button();
-            this.btnFristCH = new System.Windows.Forms.Button();
+            this.btnLast = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnPre = new System.Windows.Forms.Button();
+            this.btnFrist = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -313,57 +313,57 @@ namespace QLTN
             this.SoCK.Name = "SoCK";
             this.SoCK.Width = 76;
             // 
-            // btnLastCH
+            // btnLast
             // 
-            this.btnLastCH.BackColor = System.Drawing.Color.White;
-            this.btnLastCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnLastCH.Location = new System.Drawing.Point(259, 442);
-            this.btnLastCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLastCH.Name = "btnLastCH";
-            this.btnLastCH.Size = new System.Drawing.Size(77, 34);
-            this.btnLastCH.TabIndex = 42;
-            this.btnLastCH.Text = "Cuối";
-            this.btnLastCH.UseVisualStyleBackColor = false;
+            this.btnLast.BackColor = System.Drawing.Color.White;
+            this.btnLast.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLast.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnLast.Location = new System.Drawing.Point(259, 442);
+            this.btnLast.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.Size = new System.Drawing.Size(77, 34);
+            this.btnLast.TabIndex = 42;
+            this.btnLast.Text = "Cuối";
+            this.btnLast.UseVisualStyleBackColor = false;
             // 
-            // btnNextCH
+            // btnNext
             // 
-            this.btnNextCH.BackColor = System.Drawing.Color.White;
-            this.btnNextCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnNextCH.Location = new System.Drawing.Point(177, 442);
-            this.btnNextCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnNextCH.Name = "btnNextCH";
-            this.btnNextCH.Size = new System.Drawing.Size(77, 34);
-            this.btnNextCH.TabIndex = 41;
-            this.btnNextCH.Text = "Sau";
-            this.btnNextCH.UseVisualStyleBackColor = false;
+            this.btnNext.BackColor = System.Drawing.Color.White;
+            this.btnNext.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnNext.Location = new System.Drawing.Point(177, 442);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(77, 34);
+            this.btnNext.TabIndex = 41;
+            this.btnNext.Text = "Sau";
+            this.btnNext.UseVisualStyleBackColor = false;
             // 
-            // btnPreCH
+            // btnPre
             // 
-            this.btnPreCH.BackColor = System.Drawing.Color.White;
-            this.btnPreCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnPreCH.Location = new System.Drawing.Point(94, 442);
-            this.btnPreCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPreCH.Name = "btnPreCH";
-            this.btnPreCH.Size = new System.Drawing.Size(77, 34);
-            this.btnPreCH.TabIndex = 40;
-            this.btnPreCH.Text = "Trước";
-            this.btnPreCH.UseVisualStyleBackColor = false;
+            this.btnPre.BackColor = System.Drawing.Color.White;
+            this.btnPre.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnPre.Location = new System.Drawing.Point(94, 442);
+            this.btnPre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPre.Name = "btnPre";
+            this.btnPre.Size = new System.Drawing.Size(77, 34);
+            this.btnPre.TabIndex = 40;
+            this.btnPre.Text = "Trước";
+            this.btnPre.UseVisualStyleBackColor = false;
             // 
-            // btnFristCH
+            // btnFrist
             // 
-            this.btnFristCH.BackColor = System.Drawing.Color.White;
-            this.btnFristCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFristCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnFristCH.Location = new System.Drawing.Point(11, 442);
-            this.btnFristCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnFristCH.Name = "btnFristCH";
-            this.btnFristCH.Size = new System.Drawing.Size(77, 34);
-            this.btnFristCH.TabIndex = 39;
-            this.btnFristCH.Text = "Đầu";
-            this.btnFristCH.UseVisualStyleBackColor = false;
+            this.btnFrist.BackColor = System.Drawing.Color.White;
+            this.btnFrist.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFrist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnFrist.Location = new System.Drawing.Point(11, 442);
+            this.btnFrist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFrist.Name = "btnFrist";
+            this.btnFrist.Size = new System.Drawing.Size(77, 34);
+            this.btnFrist.TabIndex = 39;
+            this.btnFrist.Text = "Đầu";
+            this.btnFrist.UseVisualStyleBackColor = false;
             // 
             // FrmMonThi
             // 
@@ -371,10 +371,10 @@ namespace QLTN
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1006, 784);
-            this.Controls.Add(this.btnLastCH);
-            this.Controls.Add(this.btnNextCH);
-            this.Controls.Add(this.btnPreCH);
-            this.Controls.Add(this.btnFristCH);
+            this.Controls.Add(this.btnLast);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnPre);
+            this.Controls.Add(this.btnFrist);
             this.Controls.Add(this.grdData);
             this.Controls.Add(this.txtSoCK);
             this.Controls.Add(this.label7);
@@ -427,9 +427,9 @@ namespace QLTN
         private System.Windows.Forms.DataGridViewTextBoxColumn SoCau;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoCD;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoCK;
-        private System.Windows.Forms.Button btnLastCH;
-        private System.Windows.Forms.Button btnNextCH;
-        private System.Windows.Forms.Button btnPreCH;
-        private System.Windows.Forms.Button btnFristCH;
+        private System.Windows.Forms.Button btnLast;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnPre;
+        private System.Windows.Forms.Button btnFrist;
     }
 }

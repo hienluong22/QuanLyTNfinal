@@ -193,10 +193,6 @@
     <EmbeddedResource Include="FrmTrangChu.resx">
       <DependentUpon>FrmTrangChu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="prvDSGV.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>prvDSGV.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="rptDanhSachGV.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptDanhSachGV.cs</LastGenOutput>
@@ -293,6 +289,15 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

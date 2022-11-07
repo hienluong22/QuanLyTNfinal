@@ -59,6 +59,10 @@ namespace QLTN
             this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLastCH = new System.Windows.Forms.Button();
+            this.btnNextCH = new System.Windows.Forms.Button();
+            this.btnPreCH = new System.Windows.Forms.Button();
+            this.btnFristCH = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             this.SuspendLayout();
@@ -78,6 +82,10 @@ namespace QLTN
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.Controls.Add(this.btnLastCH);
+            this.panel1.Controls.Add(this.btnNextCH);
+            this.panel1.Controls.Add(this.btnPreCH);
+            this.panel1.Controls.Add(this.btnFristCH);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txtEmail);
             this.panel1.Controls.Add(this.button6);
@@ -98,17 +106,17 @@ namespace QLTN
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(3, 463);
+            this.panel1.Location = new System.Drawing.Point(3, 446);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 318);
+            this.panel1.Size = new System.Drawing.Size(1000, 335);
             this.panel1.TabIndex = 2;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(410, 190);
+            this.label8.Location = new System.Drawing.Point(412, 203);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 20);
             this.label8.TabIndex = 23;
@@ -119,7 +127,7 @@ namespace QLTN
             // 
             this.txtEmail.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail.Location = new System.Drawing.Point(127, 239);
+            this.txtEmail.Location = new System.Drawing.Point(129, 252);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
@@ -131,7 +139,7 @@ namespace QLTN
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
             this.button6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(759, 189);
+            this.button6.Location = new System.Drawing.Point(761, 202);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(176, 38);
@@ -144,7 +152,7 @@ namespace QLTN
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
             this.button5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(759, 238);
+            this.button5.Location = new System.Drawing.Point(761, 251);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(176, 38);
@@ -158,7 +166,7 @@ namespace QLTN
             this.btnupdate.Enabled = false;
             this.btnupdate.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnupdate.Location = new System.Drawing.Point(863, 135);
+            this.btnupdate.Location = new System.Drawing.Point(865, 148);
             this.btnupdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(108, 34);
@@ -172,7 +180,7 @@ namespace QLTN
             this.btndelete.BackColor = System.Drawing.Color.White;
             this.btndelete.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btndelete.Location = new System.Drawing.Point(863, 78);
+            this.btndelete.Location = new System.Drawing.Point(865, 91);
             this.btndelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(108, 34);
@@ -186,7 +194,7 @@ namespace QLTN
             this.btnedit.BackColor = System.Drawing.Color.White;
             this.btnedit.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnedit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnedit.Location = new System.Drawing.Point(717, 138);
+            this.btnedit.Location = new System.Drawing.Point(719, 151);
             this.btnedit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(99, 34);
@@ -200,7 +208,7 @@ namespace QLTN
             this.btnaddnew.BackColor = System.Drawing.Color.White;
             this.btnaddnew.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnaddnew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnaddnew.Location = new System.Drawing.Point(717, 78);
+            this.btnaddnew.Location = new System.Drawing.Point(719, 91);
             this.btnaddnew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnaddnew.Name = "btnaddnew";
             this.btnaddnew.Size = new System.Drawing.Size(99, 34);
@@ -213,7 +221,7 @@ namespace QLTN
             // 
             this.txtMaMon.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaMon.ForeColor = System.Drawing.Color.Black;
-            this.txtMaMon.Location = new System.Drawing.Point(502, 179);
+            this.txtMaMon.Location = new System.Drawing.Point(504, 192);
             this.txtMaMon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaMon.Multiline = true;
             this.txtMaMon.Name = "txtMaMon";
@@ -224,7 +232,7 @@ namespace QLTN
             // 
             this.txtSDT.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.ForeColor = System.Drawing.Color.Black;
-            this.txtSDT.Location = new System.Drawing.Point(502, 106);
+            this.txtSDT.Location = new System.Drawing.Point(504, 119);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDT.Multiline = true;
             this.txtSDT.Name = "txtSDT";
@@ -235,7 +243,7 @@ namespace QLTN
             // 
             this.txtNgaySinh.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgaySinh.ForeColor = System.Drawing.Color.Black;
-            this.txtNgaySinh.Location = new System.Drawing.Point(502, 32);
+            this.txtNgaySinh.Location = new System.Drawing.Point(504, 45);
             this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNgaySinh.Multiline = true;
             this.txtNgaySinh.Name = "txtNgaySinh";
@@ -246,7 +254,7 @@ namespace QLTN
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.ForeColor = System.Drawing.Color.Black;
-            this.txtDiaChi.Location = new System.Drawing.Point(127, 178);
+            this.txtDiaChi.Location = new System.Drawing.Point(129, 191);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
@@ -257,7 +265,7 @@ namespace QLTN
             // 
             this.txtTenGV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenGV.ForeColor = System.Drawing.Color.Black;
-            this.txtTenGV.Location = new System.Drawing.Point(127, 110);
+            this.txtTenGV.Location = new System.Drawing.Point(129, 123);
             this.txtTenGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenGV.Multiline = true;
             this.txtTenGV.Name = "txtTenGV";
@@ -268,7 +276,7 @@ namespace QLTN
             // 
             this.txtMaGV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaGV.ForeColor = System.Drawing.Color.Black;
-            this.txtMaGV.Location = new System.Drawing.Point(127, 38);
+            this.txtMaGV.Location = new System.Drawing.Point(129, 51);
             this.txtMaGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaGV.Multiline = true;
             this.txtMaGV.Name = "txtMaGV";
@@ -279,7 +287,7 @@ namespace QLTN
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(21, 245);
+            this.label7.Location = new System.Drawing.Point(23, 258);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 20);
             this.label7.TabIndex = 5;
@@ -289,7 +297,7 @@ namespace QLTN
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(410, 116);
+            this.label6.Location = new System.Drawing.Point(412, 129);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(42, 20);
             this.label6.TabIndex = 4;
@@ -299,7 +307,7 @@ namespace QLTN
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(410, 44);
+            this.label5.Location = new System.Drawing.Point(412, 57);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 20);
             this.label5.TabIndex = 3;
@@ -309,7 +317,7 @@ namespace QLTN
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 184);
+            this.label4.Location = new System.Drawing.Point(23, 197);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 2;
@@ -319,7 +327,7 @@ namespace QLTN
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 122);
+            this.label3.Location = new System.Drawing.Point(23, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 20);
             this.label3.TabIndex = 1;
@@ -329,7 +337,7 @@ namespace QLTN
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 46);
+            this.label2.Location = new System.Drawing.Point(23, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 20);
             this.label2.TabIndex = 0;
@@ -351,7 +359,7 @@ namespace QLTN
             this.grdData.Name = "grdData";
             this.grdData.RowHeadersWidth = 51;
             this.grdData.RowTemplate.Height = 24;
-            this.grdData.Size = new System.Drawing.Size(999, 409);
+            this.grdData.Size = new System.Drawing.Size(999, 393);
             this.grdData.TabIndex = 3;
             this.grdData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -421,6 +429,58 @@ namespace QLTN
             this.Email.Name = "Email";
             this.Email.Width = 71;
             // 
+            // btnLastCH
+            // 
+            this.btnLastCH.BackColor = System.Drawing.Color.White;
+            this.btnLastCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLastCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnLastCH.Location = new System.Drawing.Point(276, 2);
+            this.btnLastCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLastCH.Name = "btnLastCH";
+            this.btnLastCH.Size = new System.Drawing.Size(77, 34);
+            this.btnLastCH.TabIndex = 42;
+            this.btnLastCH.Text = "Cuối";
+            this.btnLastCH.UseVisualStyleBackColor = false;
+            // 
+            // btnNextCH
+            // 
+            this.btnNextCH.BackColor = System.Drawing.Color.White;
+            this.btnNextCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnNextCH.Location = new System.Drawing.Point(194, 2);
+            this.btnNextCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNextCH.Name = "btnNextCH";
+            this.btnNextCH.Size = new System.Drawing.Size(77, 34);
+            this.btnNextCH.TabIndex = 41;
+            this.btnNextCH.Text = "Sau";
+            this.btnNextCH.UseVisualStyleBackColor = false;
+            // 
+            // btnPreCH
+            // 
+            this.btnPreCH.BackColor = System.Drawing.Color.White;
+            this.btnPreCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnPreCH.Location = new System.Drawing.Point(111, 2);
+            this.btnPreCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPreCH.Name = "btnPreCH";
+            this.btnPreCH.Size = new System.Drawing.Size(77, 34);
+            this.btnPreCH.TabIndex = 40;
+            this.btnPreCH.Text = "Trước";
+            this.btnPreCH.UseVisualStyleBackColor = false;
+            // 
+            // btnFristCH
+            // 
+            this.btnFristCH.BackColor = System.Drawing.Color.White;
+            this.btnFristCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFristCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnFristCH.Location = new System.Drawing.Point(28, 2);
+            this.btnFristCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFristCH.Name = "btnFristCH";
+            this.btnFristCH.Size = new System.Drawing.Size(77, 34);
+            this.btnFristCH.TabIndex = 39;
+            this.btnFristCH.Text = "Đầu";
+            this.btnFristCH.UseVisualStyleBackColor = false;
+            // 
             // FrmGiangVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -473,5 +533,9 @@ namespace QLTN
         private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.Button btnLastCH;
+        private System.Windows.Forms.Button btnNextCH;
+        private System.Windows.Forms.Button btnPreCH;
+        private System.Windows.Forms.Button btnFristCH;
     }
 }

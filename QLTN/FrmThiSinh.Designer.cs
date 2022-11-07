@@ -56,6 +56,10 @@ namespace QLTN
             this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaKhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLast = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnPre = new System.Windows.Forms.Button();
+            this.btnFirst = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +79,10 @@ namespace QLTN
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.Controls.Add(this.btnLast);
+            this.panel1.Controls.Add(this.btnNext);
+            this.panel1.Controls.Add(this.btnPre);
+            this.panel1.Controls.Add(this.btnFirst);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.btnupdate);
@@ -104,7 +112,7 @@ namespace QLTN
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
             this.button6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(127, 202);
+            this.button6.Location = new System.Drawing.Point(128, 235);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(164, 38);
             this.button6.TabIndex = 17;
@@ -116,7 +124,7 @@ namespace QLTN
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
             this.button5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(385, 202);
+            this.button5.Location = new System.Drawing.Point(386, 235);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(164, 38);
             this.button5.TabIndex = 16;
@@ -129,7 +137,7 @@ namespace QLTN
             this.btnupdate.Enabled = false;
             this.btnupdate.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnupdate.Location = new System.Drawing.Point(627, 180);
+            this.btnupdate.Location = new System.Drawing.Point(628, 213);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(98, 34);
             this.btnupdate.TabIndex = 15;
@@ -142,7 +150,7 @@ namespace QLTN
             this.btndelete.BackColor = System.Drawing.Color.White;
             this.btndelete.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btndelete.Location = new System.Drawing.Point(627, 127);
+            this.btndelete.Location = new System.Drawing.Point(628, 160);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(98, 34);
             this.btndelete.TabIndex = 14;
@@ -155,7 +163,7 @@ namespace QLTN
             this.btnedit.BackColor = System.Drawing.Color.White;
             this.btnedit.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnedit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnedit.Location = new System.Drawing.Point(627, 74);
+            this.btnedit.Location = new System.Drawing.Point(628, 107);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(98, 34);
             this.btnedit.TabIndex = 13;
@@ -168,7 +176,7 @@ namespace QLTN
             this.btnaddnew.BackColor = System.Drawing.Color.White;
             this.btnaddnew.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnaddnew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnaddnew.Location = new System.Drawing.Point(627, 17);
+            this.btnaddnew.Location = new System.Drawing.Point(628, 50);
             this.btnaddnew.Name = "btnaddnew";
             this.btnaddnew.Size = new System.Drawing.Size(98, 34);
             this.btnaddnew.TabIndex = 12;
@@ -180,7 +188,7 @@ namespace QLTN
             // 
             this.txtMaKhoa.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaKhoa.ForeColor = System.Drawing.Color.Black;
-            this.txtMaKhoa.Location = new System.Drawing.Point(441, 135);
+            this.txtMaKhoa.Location = new System.Drawing.Point(442, 168);
             this.txtMaKhoa.Multiline = true;
             this.txtMaKhoa.Name = "txtMaKhoa";
             this.txtMaKhoa.Size = new System.Drawing.Size(143, 28);
@@ -190,7 +198,7 @@ namespace QLTN
             // 
             this.txtMaLop.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaLop.ForeColor = System.Drawing.Color.Black;
-            this.txtMaLop.Location = new System.Drawing.Point(441, 76);
+            this.txtMaLop.Location = new System.Drawing.Point(442, 109);
             this.txtMaLop.Multiline = true;
             this.txtMaLop.Name = "txtMaLop";
             this.txtMaLop.Size = new System.Drawing.Size(143, 28);
@@ -200,7 +208,7 @@ namespace QLTN
             // 
             this.txtNgaySinh.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgaySinh.ForeColor = System.Drawing.Color.Black;
-            this.txtNgaySinh.Location = new System.Drawing.Point(441, 25);
+            this.txtNgaySinh.Location = new System.Drawing.Point(442, 58);
             this.txtNgaySinh.Multiline = true;
             this.txtNgaySinh.Name = "txtNgaySinh";
             this.txtNgaySinh.Size = new System.Drawing.Size(143, 28);
@@ -210,7 +218,7 @@ namespace QLTN
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.ForeColor = System.Drawing.Color.Black;
-            this.txtDiaChi.Location = new System.Drawing.Point(127, 137);
+            this.txtDiaChi.Location = new System.Drawing.Point(128, 170);
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(198, 28);
@@ -220,7 +228,7 @@ namespace QLTN
             // 
             this.txtHoTen.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.ForeColor = System.Drawing.Color.Black;
-            this.txtHoTen.Location = new System.Drawing.Point(127, 77);
+            this.txtHoTen.Location = new System.Drawing.Point(128, 110);
             this.txtHoTen.Multiline = true;
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(198, 28);
@@ -230,7 +238,7 @@ namespace QLTN
             // 
             this.txtMaSV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaSV.ForeColor = System.Drawing.Color.Black;
-            this.txtMaSV.Location = new System.Drawing.Point(127, 21);
+            this.txtMaSV.Location = new System.Drawing.Point(128, 54);
             this.txtMaSV.Multiline = true;
             this.txtMaSV.Name = "txtMaSV";
             this.txtMaSV.Size = new System.Drawing.Size(198, 28);
@@ -240,7 +248,7 @@ namespace QLTN
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(353, 141);
+            this.label7.Location = new System.Drawing.Point(354, 174);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 20);
             this.label7.TabIndex = 5;
@@ -250,7 +258,7 @@ namespace QLTN
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(353, 82);
+            this.label6.Location = new System.Drawing.Point(354, 115);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 20);
             this.label6.TabIndex = 4;
@@ -260,7 +268,7 @@ namespace QLTN
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(349, 29);
+            this.label5.Location = new System.Drawing.Point(350, 62);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 20);
             this.label5.TabIndex = 3;
@@ -270,7 +278,7 @@ namespace QLTN
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 141);
+            this.label4.Location = new System.Drawing.Point(22, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 2;
@@ -280,7 +288,7 @@ namespace QLTN
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 86);
+            this.label3.Location = new System.Drawing.Point(22, 119);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 20);
             this.label3.TabIndex = 1;
@@ -290,7 +298,7 @@ namespace QLTN
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 25);
+            this.label2.Location = new System.Drawing.Point(22, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 20);
             this.label2.TabIndex = 0;
@@ -368,6 +376,58 @@ namespace QLTN
             this.MaLop.Name = "MaLop";
             this.MaLop.Width = 88;
             // 
+            // btnLast
+            // 
+            this.btnLast.BackColor = System.Drawing.Color.White;
+            this.btnLast.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLast.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnLast.Location = new System.Drawing.Point(277, 2);
+            this.btnLast.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.Size = new System.Drawing.Size(77, 34);
+            this.btnLast.TabIndex = 42;
+            this.btnLast.Text = "Cuối";
+            this.btnLast.UseVisualStyleBackColor = false;
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.White;
+            this.btnNext.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnNext.Location = new System.Drawing.Point(195, 2);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(77, 34);
+            this.btnNext.TabIndex = 41;
+            this.btnNext.Text = "Sau";
+            this.btnNext.UseVisualStyleBackColor = false;
+            // 
+            // btnPre
+            // 
+            this.btnPre.BackColor = System.Drawing.Color.White;
+            this.btnPre.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnPre.Location = new System.Drawing.Point(112, 2);
+            this.btnPre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPre.Name = "btnPre";
+            this.btnPre.Size = new System.Drawing.Size(77, 34);
+            this.btnPre.TabIndex = 40;
+            this.btnPre.Text = "Trước";
+            this.btnPre.UseVisualStyleBackColor = false;
+            // 
+            // btnFirst
+            // 
+            this.btnFirst.BackColor = System.Drawing.Color.White;
+            this.btnFirst.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFirst.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnFirst.Location = new System.Drawing.Point(29, 2);
+            this.btnFirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.Size = new System.Drawing.Size(77, 34);
+            this.btnFirst.TabIndex = 39;
+            this.btnFirst.Text = "Đầu";
+            this.btnFirst.UseVisualStyleBackColor = false;
+            // 
             // FrmThiSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -419,5 +479,9 @@ namespace QLTN
         private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKhoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaLop;
+        private System.Windows.Forms.Button btnLast;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnPre;
+        private System.Windows.Forms.Button btnFirst;
     }
 }
