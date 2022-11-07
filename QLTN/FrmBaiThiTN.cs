@@ -79,7 +79,7 @@ namespace QLTN
 
         private void FrmBaiThiTN_Load(object sender, EventArgs e)
         {
-            constr = "Data Source=DESKTOP-6H5PSI2\\SQLEXPRESS05;" +
+            constr = "Data Source=DESKTOP-2C52VJI\\SQLEXPRESS;" +
               "Initial Catalog=QLTN;Integrated Security=True;";
             conn.ConnectionString = constr;
             conn.Open();

@@ -52,6 +52,10 @@ namespace QLTN
             this.SoCau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoCK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLastCH = new System.Windows.Forms.Button();
+            this.btnNextCH = new System.Windows.Forms.Button();
+            this.btnPreCH = new System.Windows.Forms.Button();
+            this.btnFristCH = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +76,7 @@ namespace QLTN
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(23, 518);
+            this.label1.Location = new System.Drawing.Point(23, 558);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 23);
             this.label1.TabIndex = 4;
@@ -82,7 +86,7 @@ namespace QLTN
             // 
             this.txtTenMon.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenMon.ForeColor = System.Drawing.Color.Black;
-            this.txtTenMon.Location = new System.Drawing.Point(177, 513);
+            this.txtTenMon.Location = new System.Drawing.Point(177, 553);
             this.txtTenMon.Multiline = true;
             this.txtTenMon.Name = "txtTenMon";
             this.txtTenMon.Size = new System.Drawing.Size(233, 34);
@@ -93,7 +97,7 @@ namespace QLTN
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(23, 462);
+            this.label2.Location = new System.Drawing.Point(23, 502);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 23);
             this.label2.TabIndex = 6;
@@ -103,7 +107,7 @@ namespace QLTN
             // 
             this.txtMaMon.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaMon.ForeColor = System.Drawing.Color.Black;
-            this.txtMaMon.Location = new System.Drawing.Point(177, 462);
+            this.txtMaMon.Location = new System.Drawing.Point(177, 502);
             this.txtMaMon.Multiline = true;
             this.txtMaMon.Name = "txtMaMon";
             this.txtMaMon.Size = new System.Drawing.Size(233, 34);
@@ -114,7 +118,7 @@ namespace QLTN
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(23, 569);
+            this.label3.Location = new System.Drawing.Point(23, 609);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 23);
             this.label3.TabIndex = 8;
@@ -124,7 +128,7 @@ namespace QLTN
             // 
             this.txtSoCau.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoCau.ForeColor = System.Drawing.Color.Black;
-            this.txtSoCau.Location = new System.Drawing.Point(177, 564);
+            this.txtSoCau.Location = new System.Drawing.Point(177, 604);
             this.txtSoCau.Multiline = true;
             this.txtSoCau.Name = "txtSoCau";
             this.txtSoCau.Size = new System.Drawing.Size(233, 34);
@@ -135,7 +139,7 @@ namespace QLTN
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(476, 465);
+            this.label6.Location = new System.Drawing.Point(476, 505);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 23);
             this.label6.TabIndex = 12;
@@ -145,7 +149,7 @@ namespace QLTN
             // 
             this.txtSoCD.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoCD.ForeColor = System.Drawing.Color.Black;
-            this.txtSoCD.Location = new System.Drawing.Point(669, 462);
+            this.txtSoCD.Location = new System.Drawing.Point(669, 502);
             this.txtSoCD.Multiline = true;
             this.txtSoCD.Name = "txtSoCD";
             this.txtSoCD.Size = new System.Drawing.Size(233, 34);
@@ -157,7 +161,7 @@ namespace QLTN
             this.btnupdate.Enabled = false;
             this.btnupdate.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnupdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnupdate.Location = new System.Drawing.Point(641, 628);
+            this.btnupdate.Location = new System.Drawing.Point(642, 657);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(127, 44);
             this.btnupdate.TabIndex = 23;
@@ -170,7 +174,7 @@ namespace QLTN
             this.btndelete.BackColor = System.Drawing.Color.White;
             this.btndelete.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btndelete.Location = new System.Drawing.Point(497, 628);
+            this.btndelete.Location = new System.Drawing.Point(498, 657);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(127, 44);
             this.btndelete.TabIndex = 22;
@@ -183,7 +187,7 @@ namespace QLTN
             this.btnedit.BackColor = System.Drawing.Color.White;
             this.btnedit.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnedit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnedit.Location = new System.Drawing.Point(353, 628);
+            this.btnedit.Location = new System.Drawing.Point(354, 657);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(127, 44);
             this.btnedit.TabIndex = 21;
@@ -196,7 +200,7 @@ namespace QLTN
             this.btnaddnew.BackColor = System.Drawing.Color.White;
             this.btnaddnew.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnaddnew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
-            this.btnaddnew.Location = new System.Drawing.Point(209, 628);
+            this.btnaddnew.Location = new System.Drawing.Point(210, 657);
             this.btnaddnew.Name = "btnaddnew";
             this.btnaddnew.Size = new System.Drawing.Size(127, 44);
             this.btnaddnew.TabIndex = 20;
@@ -209,7 +213,7 @@ namespace QLTN
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
             this.button6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(269, 702);
+            this.button6.Location = new System.Drawing.Point(270, 731);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(182, 38);
             this.button6.TabIndex = 25;
@@ -221,7 +225,7 @@ namespace QLTN
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
             this.button5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(503, 702);
+            this.button5.Location = new System.Drawing.Point(504, 731);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(182, 38);
             this.button5.TabIndex = 24;
@@ -232,7 +236,7 @@ namespace QLTN
             // 
             this.txtSoCK.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoCK.ForeColor = System.Drawing.Color.Black;
-            this.txtSoCK.Location = new System.Drawing.Point(669, 513);
+            this.txtSoCK.Location = new System.Drawing.Point(669, 553);
             this.txtSoCK.Multiline = true;
             this.txtSoCK.Name = "txtSoCK";
             this.txtSoCK.Size = new System.Drawing.Size(233, 34);
@@ -243,7 +247,7 @@ namespace QLTN
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(476, 516);
+            this.label7.Location = new System.Drawing.Point(476, 556);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(101, 23);
             this.label7.TabIndex = 26;
@@ -309,12 +313,68 @@ namespace QLTN
             this.SoCK.Name = "SoCK";
             this.SoCK.Width = 76;
             // 
+            // btnLastCH
+            // 
+            this.btnLastCH.BackColor = System.Drawing.Color.White;
+            this.btnLastCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLastCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnLastCH.Location = new System.Drawing.Point(259, 442);
+            this.btnLastCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLastCH.Name = "btnLastCH";
+            this.btnLastCH.Size = new System.Drawing.Size(77, 34);
+            this.btnLastCH.TabIndex = 42;
+            this.btnLastCH.Text = "Cuối";
+            this.btnLastCH.UseVisualStyleBackColor = false;
+            // 
+            // btnNextCH
+            // 
+            this.btnNextCH.BackColor = System.Drawing.Color.White;
+            this.btnNextCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnNextCH.Location = new System.Drawing.Point(177, 442);
+            this.btnNextCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNextCH.Name = "btnNextCH";
+            this.btnNextCH.Size = new System.Drawing.Size(77, 34);
+            this.btnNextCH.TabIndex = 41;
+            this.btnNextCH.Text = "Sau";
+            this.btnNextCH.UseVisualStyleBackColor = false;
+            // 
+            // btnPreCH
+            // 
+            this.btnPreCH.BackColor = System.Drawing.Color.White;
+            this.btnPreCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnPreCH.Location = new System.Drawing.Point(94, 442);
+            this.btnPreCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPreCH.Name = "btnPreCH";
+            this.btnPreCH.Size = new System.Drawing.Size(77, 34);
+            this.btnPreCH.TabIndex = 40;
+            this.btnPreCH.Text = "Trước";
+            this.btnPreCH.UseVisualStyleBackColor = false;
+            // 
+            // btnFristCH
+            // 
+            this.btnFristCH.BackColor = System.Drawing.Color.White;
+            this.btnFristCH.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFristCH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(132)))), ((int)(((byte)(253)))));
+            this.btnFristCH.Location = new System.Drawing.Point(11, 442);
+            this.btnFristCH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFristCH.Name = "btnFristCH";
+            this.btnFristCH.Size = new System.Drawing.Size(77, 34);
+            this.btnFristCH.TabIndex = 39;
+            this.btnFristCH.Text = "Đầu";
+            this.btnFristCH.UseVisualStyleBackColor = false;
+            // 
             // FrmMonThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1006, 784);
+            this.Controls.Add(this.btnLastCH);
+            this.Controls.Add(this.btnNextCH);
+            this.Controls.Add(this.btnPreCH);
+            this.Controls.Add(this.btnFristCH);
             this.Controls.Add(this.grdData);
             this.Controls.Add(this.txtSoCK);
             this.Controls.Add(this.label7);
@@ -367,5 +427,9 @@ namespace QLTN
         private System.Windows.Forms.DataGridViewTextBoxColumn SoCau;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoCD;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoCK;
+        private System.Windows.Forms.Button btnLastCH;
+        private System.Windows.Forms.Button btnNextCH;
+        private System.Windows.Forms.Button btnPreCH;
+        private System.Windows.Forms.Button btnFristCH;
     }
 }
