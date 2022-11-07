@@ -29,6 +29,21 @@ namespace QLTN
 
         string constr, sql, username, subname, ht, r, sub, mats;
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtDA1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSeconds_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             timer1.Stop();

@@ -7,11 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QLTN
 {
     public partial class FrmTrangChu : Form
     {
+        SqlConnection conn = new SqlConnection();
+        SqlDataAdapter da = new SqlDataAdapter();
+        SqlCommand cmd = new SqlCommand();
+        DataTable dt = new DataTable();
+        //DataTable comdt = new DataTable();
+        //DataTable com2dt = new DataTable();
+        string sql, constr;
+        int i;
+        //Boolean addnewflag = false;
         string tenuser;
         public FrmTrangChu(string username)
         {
@@ -87,6 +97,33 @@ namespace QLTN
             pnl2.Controls.Add(frm2);
             frm2.Dock = DockStyle.Fill;
             frm2.Show();
+        }
+
+        private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnl2.Controls.Clear();
+            FrmTaiKhoan frm2 = new FrmTaiKhoan();
+            frm2.TopLevel = false;
+            pnl2.Controls.Add(frm2);
+            frm2.Dock = DockStyle.Fill;
+            frm2.Show();
+        }
+
+        private void inDanhSáchGiảngViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            constr = "Data Source=DESKTOP-2C52VJI\\SQLEXPRESS;" +
+                                                   "Initial Catalog=QLTN;Integrated Security=True";
+            conn.ConnectionString = constr;
+            conn.Open();
+            rptDanhSachGV rpt = new rptDanhSachGV();
+            DataTable rptData = new DataTable();
+            sql = "Select MaGV, TenGV, DiaChi, SDT, Email, MaMon From tblGiangVien order by MaGV ";
+            da = new SqlDataAdapter(sql, conn);
+            da.Fill(rptData);
+            rpt.SetDataSource(rptData);
+            //rpt.DataDefinition.FormulaFields["TenNhom"].Text = "'" + comGiaTri.Text + "'";
+            frmprvDSGV f = new frmprvDSGV(rpt);
+            f.Show();
         }
     }
 }

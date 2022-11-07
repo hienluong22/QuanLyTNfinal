@@ -35,7 +35,7 @@ namespace QLTN
         private void FrmCauHoi_Load(object sender, EventArgs e)
         {
 
-            constr = "Data Source = DESKTOP-6H5PSI2\\SQLEXPRESS05; Initial Catalog = QLTN; Integrated Security = True;";
+            constr = "Data Source = DESKTOP-2C52VJI\\SQLEXPRESS; Initial Catalog = QLTN; Integrated Security = True;";
             conn.ConnectionString = constr;
             conn.Open();
 
@@ -540,7 +540,7 @@ namespace QLTN
                     rbDA2.Checked = true;
                 }
 
-                if (grdDataCH.Rows[i].Cells["HinhThuc"].Value.ToString() == "Nhiều lựa chọn")
+                if (dtda.Rows.Count==4)
                 {
                     rbDA3.Visible = true;
                     rbDA4.Visible = true;

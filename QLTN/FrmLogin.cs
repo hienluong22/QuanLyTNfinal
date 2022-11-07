@@ -23,6 +23,18 @@ namespace QLTN
             InitializeComponent();
         }
 
+        private void chkShow_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkShow.Checked)
+            {
+                txtPass.PasswordChar = (char)0;
+            }
+            else
+            {
+                txtPass.PasswordChar = '*';
+            }
+        }
+
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton ckd = sender as RadioButton;

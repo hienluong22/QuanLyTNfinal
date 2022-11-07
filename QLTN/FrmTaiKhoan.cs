@@ -122,7 +122,7 @@ namespace QLTN
 
                     sql = "set dateformat dmy update tblTaiKhoan set " +
                         "MaTK='" + txtMaTK.Text + "'," +
-                      " TenDN=N'" + txtTenDN.Text + "',MatKhau='" + txtMatKhau.Text + "',Quyen='" + comQ.Text + "'"
+                      " TenDN=N'" + txtTenDN.Text + "',MatKhau='" + txtMatKhau.Text + "',Quyen=N'" + comQ.Text + "'"
                         + " where MaTK='" + txtMaTK.Text + "'";
                     cmd.Connection = conn;
                     cmd.CommandText = sql;
@@ -199,6 +199,11 @@ namespace QLTN
             grdData.DataSource = dt;
             grdData.Refresh();
             NapCT();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void NapCT()
