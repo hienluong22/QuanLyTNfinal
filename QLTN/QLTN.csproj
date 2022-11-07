@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -94,6 +101,12 @@
     <Compile Include="FrmMonThi.Designer.cs">
       <DependentUpon>FrmMonThi.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmprvDSGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprvDSGV.Designer.cs">
+      <DependentUpon>frmprvDSGV.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +138,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLTNDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="rptDanhSachGV.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDanhSachGV.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="FrmBaiThiTN.resx">
       <DependentUpon>FrmBaiThiTN.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +168,9 @@
     <EmbeddedResource Include="FrmMonThi.resx">
       <DependentUpon>FrmMonThi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmprvDSGV.resx">
+      <DependentUpon>frmprvDSGV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTaiKhoan.resx">
       <DependentUpon>FrmTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +192,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTrangChu.resx">
       <DependentUpon>FrmTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDanhSachGV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDanhSachGV.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -260,6 +286,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MicrosoftTeams-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
